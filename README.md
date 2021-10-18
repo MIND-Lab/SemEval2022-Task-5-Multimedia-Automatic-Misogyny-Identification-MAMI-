@@ -21,4 +21,4 @@ The baselines used for the MAMI challenge, Subtask B, are:
 (2) a hierarchical multi-label model, based on the concatenation of deep image and text representations, for predicting if the meme is misogynous and the corresponding type.
 
 **Contact**
-Should you have any questions, please join the MAMI Google group semeval2022-mami[AT]googlegroups.com.
+Should you have any questions, please join the MAMI Google group: semeval2022-mami[AT]googlegroups.com.
