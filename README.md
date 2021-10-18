@@ -1,5 +1,9 @@
 # SemEval2022-Task 5: Multimedia Automatic Misogyny Identification (MAMI)
 This is the Github repository for SemEval-2022 Task 5, **Multimedia Automatic Misogyny Identification** (**MAMI**). This repositopry contains:
+1. Dataset Request Form
+2. Evaluation Script
+3. Baselines
+4. Contacts
 
 ## Dataset Request Form
 The datasets are exclusively reserved for the participants of SemEval-2022 Task 5 and are not to be used freely. They may be distributed upon request (contact the task organizers) and for academic purposes only. To request the datasets, please fill in the following form: https://forms.gle/AGWMiGicBHiQx4q98
@@ -20,5 +24,5 @@ The baselines used for the MAMI challenge, Subtask B, are:
 (1) a multi-label model, based on the concatenation of deep image and text representations, for predicting if the meme is misogynous and the corresponding type.
 (2) a hierarchical multi-label model, based on the concatenation of deep image and text representations, for predicting if the meme is misogynous and the corresponding type.
 
-## Contact
+## Contacts
 Should you have any questions, please join the MAMI Google group: semeval2022-mami[AT]googlegroups.com.
