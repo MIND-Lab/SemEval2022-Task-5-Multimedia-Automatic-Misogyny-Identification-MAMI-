@@ -15,14 +15,16 @@ The evalulation script are used to rank the teams participating in the MAMI chal
 
 
 ## Baselines
-The baselines used for the MAMI challenge, Subtask A, are:
-1. a deep representation of text, based on a fine-tuned sentence embedding using the USE pre-trained model;
-2. a deep representation of image content, based on a fine-tuned image classification model grounded on VGG-16;
-3. a concatenation of deep image and text representations.
+The baseline models used for the MAMI challenge can be found in [Baseline Folder](https://github.com/MIND-Lab/MAMI/tree/main/Baselines).
 
-The baselines used for the MAMI challenge, Subtask B, are:
-1. a multi-label model, based on the concatenation of deep image and text representations, for predicting if the meme is misogynous and the corresponding type;
-2. a hierarchical multi-label model, based on the concatenation of deep image and text representations, for predicting if the meme is misogynous and the corresponding type.
+For Subtask A, the baselines are grounded on:
+1. a deep representation of text, i.e. a fine-tuned sentence embedding using the USE pre-trained model;
+2. a deep representation of image content, i.e. based on a fine-tuned image classification model grounded on VGG-16;
+3. a concatenation of deep image and text representations, i.e. a single layer neural network.
+
+For Subtask B, the baselines are grounded on:
+1. a multi-label model, based on the concatenation of deep image and text representations, for predicting simpultaneosly if a meme is misogynous and the corresponding type;
+2. a hierarchical multi-label model, based on the concatenation of deep image and text representations, for predicting if a meme is misogynous or not and, if misogynopus, the corresponding type.
 
 ## Contacts
 Should you have any questions, please join the MAMI Google group: semeval2022-mami_AT_googlegroups.com.
