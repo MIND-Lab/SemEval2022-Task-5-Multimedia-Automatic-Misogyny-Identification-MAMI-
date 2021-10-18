@@ -1,4 +1,4 @@
-# SemEval Task 5: Multimedia Automatic Misogyny Identification (MAMI)
+# SemEval2022-Task 5: Multimedia Automatic Misogyny Identification (MAMI)
 This is the Github repository for SemEval-2022 Task 5, **Multimedia Automatic Misogyny Identification** (**MAMI**).
 
 **Disclaimer**
