@@ -106,7 +106,7 @@ del tX_train
 
 gc.collect()
 
-test_df = pd.read_csv(csv_path_test, usecols=['file_name', 'misogynous', 'Text Transcription'], sep='\t')
+test_df = pd.read_csv(csv_path_test, sep='\t')
 
 # Universal Sentence Encoder (USE)
 '''
@@ -128,20 +128,11 @@ with tf.compat.v1.Session() as session:
 test_df['USE'] = text_embeddings
 
 #division and processing of data as input to the model
-X_test = test_df[['file_name', 'USE']]
-y_test = test_df['misogynous']
-
 #Text
 tmp = []
-for value in X_test['USE']:
+for value in test_df['USE']:
     tmp.append([value])  
 tX_test = np.array(tmp)
-
-#misogynous label
-tmp = []
-for value in y_test:
-    tmp.append([value])  
-y_test = np.array(tmp)
 
 #clear memory
 del dfs
