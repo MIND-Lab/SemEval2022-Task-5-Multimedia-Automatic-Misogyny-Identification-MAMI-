@@ -178,7 +178,7 @@ del tX_train
 gc.collect()
 
 #load data
-test_df = pd.read_csv(csv_path_test, usecols=['file_name', 'misogynous', 'Text Transcription'], sep='\t')
+test_df = pd.read_csv(csv_path_test, sep='\t')
 path = image_path+'/'
 test_df['image_path'] = path + test_df['file_name']
 
@@ -205,7 +205,6 @@ test_df['image'] = test_df['image_path'].apply(lambda x: img_to_array(loadImage(
 
 #division and processing of data as input to the model
 X_test = test_df[['file_name', 'USE', 'image']]
-y_test = test_df['misogynous']
 
 #Text
 tmp = []
@@ -219,12 +218,6 @@ tmp = []
 for value in X_test['image']:
     tmp.append(value)  
 iX_test = np.array(tmp)
-
-#misogynous label
-tmp = []
-for value in y_test:
-    tmp.append([value])  
-y_test = np.array(tmp)
 
 #clear memory
 del tmp
