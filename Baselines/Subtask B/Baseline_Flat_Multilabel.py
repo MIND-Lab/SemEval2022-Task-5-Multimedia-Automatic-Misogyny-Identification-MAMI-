@@ -207,6 +207,7 @@ test_df['image'] = None
 test_df['image'] = test_df['image_path'].apply(lambda x: img_to_array(loadImage(x)))        
 
 #division and processing of data as input to the model
+X_test = test_df[['file_name', 'USE', 'image']]
 #Text
 tmp = []
 for value in X_test['USE']:
@@ -218,12 +219,6 @@ tmp = []
 for value in X_test['image']:
     tmp.append(value)  
 iX_test = np.array(tmp)
-
-#misogynous label
-tmp = []
-for index, row in y_test.iterrows():
-  tmp.append(np.array(row.values))
-y_test = np.array(tmp)
 
 #clear memory
 del dfs
