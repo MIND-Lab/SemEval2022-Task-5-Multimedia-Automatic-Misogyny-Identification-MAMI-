@@ -1,0 +1,5 @@
+pandas
+tensorflow_hub
+tensorflow
+numpy
+keras
