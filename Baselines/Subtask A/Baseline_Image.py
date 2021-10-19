@@ -113,7 +113,7 @@ del iX_train
 gc.collect()
 
 #load data
-test_df = pd.read_csv(csv_path_test, usecols=['file_name', 'misogynous'], sep='\t')
+test_df = pd.read_csv(csv_path_test, sep='\t')
 path = image_path+'/'
 test_df['image_path'] = path + test_df['file_name']
 
@@ -122,20 +122,11 @@ test_df['image'] = None
 test_df['image'] = test_df['image_path'].apply(lambda x: img_to_array(loadImage(x)))        
 
 #division and processing of data as input to the model
-X_test = test_df[['file_name', 'image']]
-y_test = test_df['misogynous']
-
 #images
 tmp = []
-for value in X_test['image']:
+for value in test_df['image']:
     tmp.append(value)  
 iX_test = np.array(tmp)
-
-#misogynous label
-tmp = []
-for value in y_test:
-    tmp.append([value])  
-y_test = np.array(tmp)
 
 #_______________________________PREDICTION_______________________________
 predictions = image_model.predict(iX_test, batch_size=batch_size)
