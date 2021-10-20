@@ -26,7 +26,7 @@ To run each baseline model, the following items in the same folder are required:
 - the Ground Truth file ('truth.txt') in the folder 'ref'
 - folder 'TRAINING' containing the memes provided by the challenge
 
-The execution folder should be structured as follow:
+The execution folder for evaluating the baselines should be structured as follow:
 input/
 |_baseline_name.py
 |_ evaluation.py
@@ -39,6 +39,16 @@ input/
   |_ 2.jpg
   |_ ...
   
+  
+If you want to evaluate the performance of your own model, the folder containing 'evaluation.py' should include also a subfolder 'res' including the prediction file 'answer.txt' and a subfolder 'res' reporting the Golden Labels in the file 'truth.txt'. 
+
+The execution folder for evaluating your model should be structured as follow:
+input/
+|_ evaluation.py
+|_ ref/
+|  |_truth.txt
+|_ res/
+  |_answer.txt
   
 OUTPUT
 At the end of the execution, a folder related to each specific baseline will be created. Each folder will contain:
