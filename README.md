@@ -16,7 +16,6 @@ The evalulation script are used to rank the teams participating in the MAMI chal
 
 ## Baselines
 The baseline models used for the MAMI challenge can be found in [Baseline Folder](https://github.com/MIND-Lab/MAMI/tree/main/Baselines).
-
 For Subtask A, the baselines are grounded on:
 1. a deep representation of text, i.e. a fine-tuned sentence embedding using the USE pre-trained model;
 2. a deep representation of image content, i.e. based on a fine-tuned image classification model grounded on VGG-16;
