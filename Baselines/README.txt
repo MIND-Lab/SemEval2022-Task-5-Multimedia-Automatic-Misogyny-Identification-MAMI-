@@ -1,10 +1,8 @@
 BASELINE
-In this repository many baseline models are proposed as an example to satisfy taskA or taskB.
-Each file loads the challenge data, obtaining them from a path that can be customized by modifying the first lines of the code.
-Then, a specific model is created and used to make predictions on the test data. Finally, the metrics indicated by the challenge
-(macro-average F1-Measure for taskA and weighted-average F1-Measure for taskB) are computed using the script evaluation.py.
-Although submitting the challenge requires only a prediction file, here an example of score evaluation is provided,
-in addition to the trained model and a scheme that represents its structure.
+This repository contains the baseline models used for taskA or taskB at SemEval-Task5 (MAMI).
+Each baseline loads the challenge data (e.g. csv file contating the meme transcription and labels, raw images). The data path are specified at the beginning of each script and can be customized according to the user preferences. 
+Each baseline learns a model on the training data and makes predictions on the test set. Macro-average F1-Measure is computed for taskA, while weighted-average F1-Measure is estimated for taskB  using the script 'evaluation.py'.
+The scripts of each baseline produces, additionally to the prediction file,  a dump of the trained model, the performance measures and an image denoting the model structure. 
 
 EVALUATION
 As said, each baseline script evaluate the model performances using evaluation.py.
