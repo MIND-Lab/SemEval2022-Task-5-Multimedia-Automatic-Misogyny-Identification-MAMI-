@@ -5,7 +5,7 @@ This is the Github repository for SemEval-2022 Task 5, **Multimedia Automatic Mi
 4. Contacts
 
 ## Dataset Request Form
-The datasets are exclusively reserved for the participants of SemEval-2022 Task 5 and are not to be used freely. The data may be distributed upon request and for academic purposes only. To request the datasets, please fill out the following form: https://forms.gle/AGWMiGicBHiQx4q98
+The datasets (10000 + 1000 memes about misogyny detection) are exclusively reserved for the participants of SemEval-2022 Task 5 and are not to be used freely. The data may be distributed upon request and for academic purposes only. To request the datasets, please fill out the following form: https://forms.gle/AGWMiGicBHiQx4q98
 
 After submitting the required info, participants will have  a link to a folder containing the datasets in a zip format (trial, training and development) and the password to uncompress the files.
 
