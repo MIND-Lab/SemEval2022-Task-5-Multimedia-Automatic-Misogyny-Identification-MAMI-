@@ -1,10 +1,10 @@
 # SemEval2022-Task 5: Multimedia Automatic Misogyny Identification (MAMI)
-This is the Github repository for SemEval-2022 Task 5, **Multimedia Automatic Misogyny Identification** (**MAMI**). This repositopry contains:
+This is the Github repository for SemEval-2022 Task 5, Multimedia Automatic Misogyny Identification (MAMI). This repositopry contains:
 1. Dataset (10000 + 1000 memes about misogyny detection)
 2. Evaluation Script and Baselines
 4. Contacts
 
-Dataset, baselines and evaluation scripts are related to our paper "_SemEval-2022 Task 5: Multimedia Automatic Misogyny Identification_" https://aclanthology.org/2022.semeval-1.74/ 
+Dataset, baselines and evaluation scripts are related to our paper "**_SemEval-2022 Task 5: Multimedia Automatic Misogyny Identification_" https://aclanthology.org/2022.semeval-1.74/** 
 
 ## Dataset 
 The datasets (10000 + 1000 memes about misogyny detection) are exclusively reserved for the participants of SemEval-2022 Task 5 and are not to be used freely. The data may be distributed upon request and for academic purposes only. To request the datasets, please fill out the following form: https://forms.gle/AGWMiGicBHiQx4q98
